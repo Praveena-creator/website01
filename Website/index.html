@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header starts -->
+    <header class="header">
+        <!-- Hamburger Menu Button -->
+        <div class="menu-button" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+          
+        </div>
+    
+        <!-- Name Logo -->
+        <div class="name-logo">
+          <img src="images/namelogo.png" alt="Name Logo" class="logo">
+        </div>
+    
+        <!-- Logo1 and Logo2 -->
+        <div class="logos">
+          <img src="images/starlogo.png" alt="Logo 1" class="logo">
+          <img src="images/Isologo.png" alt="Logo 2" class="logo">
+        </div>
+      </header>
+    
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <span class="nav-close-btn" id="nav_close">X</span>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#objective">Objectives</a></li>
+          <li><a href="#vision">Vision</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#OHS">OHS</a></li>
+          <li><a href="#qualitypolicy">Quality Policy</a></li>
+          <li><a href="#org">Organization</a></li>
+          <li><a href="#client">Clientele</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    
+    </header>  
+    <!-- Header ends -->
+
+    <script >
+      
+
+      function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            menu.classList.toggle('active');
+        }
+        
+        // Close button functionality
+        document.getElementById('nav_close').addEventListener('click', function () {
+            const menu = document.getElementById('navMenu');
+            menu.classList.remove('active');
+        });
+
+        function showFullContent() {
+            const modal = document.getElementById("modal");
+            modal.style.display = "block";
+          }
+          
+          function closeModal() {
+            const modal = document.getElementById("modal");
+            modal.style.display = "none";
+          }
+          
+        
+      
+
+    </script>
+
+    <main>
+        <!--home page starts-->
+        <section class="about-section">
+          <div class="overlay">
+            <p>Tech Lee Engineering Pte Ltd was established in 2013 by professionals 
+               with vast experience in Engineering and Management.</p>
+            <h6>Our Business Activities include end-to-end services for 
+               Mechanical, Electrical, Maintenance, Construction, and Telecommunication.</h6>
+            <h5>Our Accreditation<br>
+              <span>ISO45001:2018 Safety Management System<br>Bizsafe Star company</span>
+            </h5>
+          </div>
+        </section>
+        <!--home page ends-->
+
+        <!--activity section starts-->
+        <section class="activities" id="activities">
+            <h2 class="activities__heading">Our Activities</h2>
+            <div class="activities__list">
+                <div class="activity">
+                    <div class="activity__icon">🔧</div>
+                    <h3>Mechanical Works</h3>
+                    <p>Specialized in comprehensive mechanical solutions, including installations and maintenance.</p>
+                </div>
+                <div class="activity">
+                    <div class="activity__icon">⚡</div>
+                    <h3>Electrical Works</h3>
+                    <p>Providing expert electrical installations, system upgrades, and maintenance services.</p>
+                </div>
+                <div class="activity">
+                    <div class="activity__icon">🏢</div>
+                    <h3>Facilities & Utilities Management</h3>
+                    <p>Comprehensive management of building systems, utilities, and facilities for optimal performance.</p>
+                </div>
+                <div class="activity">
+                    <div class="activity__icon">🚿</div>
+                    <h3>Plumbing & Sanitary Works</h3>
+                    <p>Expert solutions for plumbing installations and sanitary systems maintenance.</p>
+                </div>
+                <div class="activity">
+                    <div class="activity__icon">🔥</div>
+                    <h3>Fire Protection System</h3>
+                    <p>Installation and maintenance of fire safety systems to ensure compliance and safety.</p>
+                </div>
+                <div class="activity">
+                    <div class="activity__icon">❄️</div>
+                    <h3>HVAC Systems</h3>
+                    <p>Installation and upkeep of heating, ventilation, and air conditioning systems for all environments.</p>
+                </div>
+                <div class="activity">
+                    <div class="activity__icon">📡</div>
+                    <h3>Telecommunication</h3>
+                    <p>Comprehensive solutions for telecommunication networks, systems, and installations.</p>
+                </div>
+                <div class="activity">
+                    <div class="activity__icon">🛠️</div>
+                    <h3>Operations Provider</h3>
+                    <p>Ensuring seamless operation of facilities and utility systems with skilled professionals.</p>
+                </div>
+            </div>
+        </section>
+        <!--activity section ends-->
+        <!--objective section starts-->
+        <section class="objective" id="objective">
+          <h2 class="objective__heading">Our Objective</h2>
+          <ul class="objective__list">
+              <li>To Provide an effective service in the Mechanical, Electrical,Maintanance,Construction etc., </li>
+              <li>To  Plan and Executive various  buildings and Civil Engineering Projects</li>
+              <li>To Provide cost effective Engineering solutions etc.,</li>
+          </ul>
+      </section>
+      <!--objective section ends-->
+      <!--vision section starts-->
+      <section class="vision" id="vision">
+        <h2 class="vision__heading">Our Vision</h2>
+        <p class="vision__paragraph">
+            Tech Lee Engineering Pte Ltd Committed to providing quality,safety and value-based services ,to its Clientele by a knowledgeable management ,to lead and guide a team of qualified supervisors,engineers and experienced/skilled workers.
+        </p>
+    </section>
+    <!--vision section ends-->
+    <!--mission section starts-->
+    <section class="mission-layout" id="mission">
+      <div class="image-container">
+        <div class="image-row" id="image1">
+          <img src="images/image1.jpg" alt="Image 1">
+        </div>
+        <div class="image-row">
+          <img src="images/image 2.jpg" alt="Image 2">
+          <img src="images/image 3.jpg" alt="Image 3">
+        </div>
+      </div>
+      
+      <div class="mission-text">
+          <h2>Our Mission</h2>
+          <ul class="mission-points">
+            <li>To deliver High Quality and Safety services.</li>
+            <li>Developing a culture of integrity and professionalism.</li>
+            <li>Meeting customer's statisfaction</li>
+            <li>Competitive services</li>
+          </ul>
+        </div>
+    </section> 
+    <!--mission section ends-->
+    <!--ohs section starts-->
+    <div class="container" id="OHS">
+      <div class="intro">
+        <h1>Our Occupational,Health & Safety & SecurityPolicy</h1>
+        <p>Click on the OHScard to view the full content.</p>
+      </div>
+      <div class="card" onclick="showFullContent()">
+        <div class="card-header">
+          <span>OHS</span>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="card-content">
+          <p class="preview-text">The Manager and senior management of Tech Lee Engineering Pte Ltd., recognizes the importance of providing all our employees,customers and contractors with a safe and healthy work environment. </p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal for Full Content -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h1>Our Occupational,Health & Safety & SecurityPolicy</h1>
+        <p>In supporting this philosophy, the company commits toward the prevention of ill health & injury to personnel, damage to the property and the environment by adapting safe working practices in line with national and international safety regulations and standards and continually improves its effectiveness by establishing OHS objectives & targets.
+          <ul class="model-points">
+            <li>Providing safe and well maintain tools and equipment to all employees</li>
+            <li>Comply with all applicable OHS legal and other requirements</li>
+            <li>Provide training to all employees to enhance their competence and awareness</li>
+            <li>Establish, implement, maintain a recognized OHS management system and communicate this policy to all the persons working for or on behalf of our company</li>
+            
+          </ul>
+          <p>Occupational Health & Safety Policy and OH&S objectives shall be reviewed at least once in a year and will be made available to public, customers, suppliers and any other interested parties upon request or whenever necessary</p>
+         
+        </p>
+      </div>
+    </div>
+    
+   <!--ohs section ends-->
+   <!--quality section starts-->
+   <div class="container1" id="qualitypolicy">
+    <div class="sidebar">
+        <h1>Quality Policy</h1>
+        
+    </div>
+    <div class="content">
+        <h2>Maintain and Keep Records of Safety & Quality Management System</h2>
+        <p>We ensure accurate documentation and regular reviews of our systems to uphold the highest safety and quality standards.</p>
+
+        <h2>Complying to Statutory and Legal Requirements</h2>
+        <p>We strictly adhere to all relevant legal and statutory guidelines, ensuring operational compliance and trustworthiness.</p>
+
+        <h2>Employee Involvement</h2>
+        <p>Employees are empowered and actively engaged in quality initiatives to foster continuous improvement and accountability.</p>
+
+        
+    </div>
+</div>
+   
+<!--quality section ends-->
+<!--organizer starts-->
+<div class="body-org" id="org">
+  <div class="org-heading">
+    <h2>Our Organization</h2>
+  </div>
+<div class="binary-tree">
+  <!-- Grandparent -->
+  <div class="node grandparent">
+    <h3>KS PALANI</h3>
+    <p>Technical & HSE Directors</p>
+  </div>
+  
+<div class="arrow grandparent-arrow"></div>
+
+  <!-- Parent -->
+  <div class="section parent">
+    <div class="node">
+      <h3>Technical Manager</h3>
+    </div>
+  </div>
+
+  <!-- Left Section (Admin and Safety Coordinator) -->
+  <div class="left-section">
+     
+    <!-- Left Parent 1: Admin -->
+    <div class="node">
+      <h3>Admin</h3>
+    </div>
+    <!-- <div class="arrow left-section1-arrow"></div> -->
+    <!-- Left Parent 2: Safety Coordinator -->
+    <div class="node">
+      <h3>Safety Coordinator</h3>
+    </div>
+    <!-- <div class="arrow left-section-arrow"></div> -->
+  </div>
+
+  <!-- Right Section (Project Schedule and Safety Supervisor) -->
+  <div class="right-section">
+    <!-- Right Parent 1: Project Schedule -->
+    <div class="node">
+      <h3>Project Scheduler</h3>
+    </div> 
+    <!-- <div class="arrow right-section1-arrow"></div> -->
+
+    <!-- Right Parent 2: Safety Supervisor -->
+    <div class="node">
+      <h3>Safety Supervisors</h3>
+    </div>
+    <!-- <div class="arrow right-section-arrow"></div> -->
+  </div>
+
+  <!-- Children -->
+  <div class="section children">
+    <!-- Child 1: Project Engineer -->
+    <div class="child">
+      <div class="arrow parent-to-child1-arrow"></div>
+
+      <div class="node">
+        <h3>Project Engineer</h3>
+      </div>
+      <!-- Sub-Child: Site Manager -->
+      <div class="sub-children">
+        <div class="node">
+          <h4>Site Supervisor</h4>
+        </div>
+         <!-- Sub-Sub-Child: Technical Worker -->
+        <div class="node">
+          <h4>Technicians & Workers</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Child 2: Senior Project Engineer -->
+    <div class="child">
+      <div class="arrow parent-to-child2-arrow"></div>
+      <div class="node">
+        <h3>Senior Project Engineer</h3>
+      </div>
+      <div class="sub-children">
+        <div class="node">
+          <h4>Site Supervisor</h4>
+        </div>
+        <div class="node">
+          <h4>Technicians & Workers</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Child 3: Project Engineer -->
+    <div class="child">
+      <div class="arrow parent-to-child3-arrow"></div>
+      <div class="node">
+        <h3>Project Engineer</h3>
+      </div>
+      <div class="sub-children">
+        <div class="node">
+          <h4>Site Supervisor</h4>
+        </div>
+        <div class="node">
+          <h4>Technicians & Workers</h4>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--organizer ends-->
+<!--client section starts-->
+<div class="client" id="client">
+<div class="company-list">
+  <!-- Background Balls -->
+  <div class="background-ball ball1"></div>
+  <div class="background-ball ball2"></div>
+  <div class="background-ball ball3"></div>
+  <div class="background-ball ball4"></div>
+  <div class="background-ball ball5"></div>
+
+  <!-- Content -->
+  <header class="header1">
+    <h1>Our Trusted Partners</h1>
+  </header>
+  <ul>
+    <li>
+      <span class="checkmark">✓</span> SATS Aero Laundry Pte Ltd.,
+    </li>
+    <li>
+      <span class="checkmark">✓</span>  Up Communications Pte Ltd. 
+    </li>
+    <li>
+      <span class="checkmark">✓</span> Eco Wise Marina Power Pte Ltd.,
+    </li>
+    <li>
+      <span class="checkmark">✓</span> PUB Tuas Desalination Plant UV Systems
+    </li>
+    <li>
+      <span class="checkmark">✓</span> VNV E&C Pte Ltd.,Hart Engineering Pte Ltd.
+    </li>
+    <li>
+      <span class="checkmark">✓</span>UJ piping Technology Pte Ltd.
+    </li>
+    <li>
+      <span class="checkmark">✓</span>Hart Engineering Pte Ltd.
+    </li>
+    <li>
+      <span class="checkmark">✓</span>Soon Poh Telecommunications Pte Ltd
+    </li>
+    <li>
+      <span class="checkmark">✓</span>Nippon Builders Pte Ltd.
+    </li>
+    <li>
+      <span class="checkmark">✓</span> Mie-Tech Engineering & Construction Pte Ltd.
+    </li>
+    <li>
+      <span class="checkmark">✓</span> Skybolt Pte Ltd.
+    </li>
+  </ul>
+</div>
+</div>
+<!--client section ends-->
+ <!-- Footer Section -->
+ <footer class="footer" id="contact">
+  <div class="footer-content">
+    <h2>Contact Us</h2>
+    <p><strong>KS. Palani, BE., MS., WSHO., FSM.</strong></p>
+    <p>Technical Director</p>
+    <p>
+      <i class="fas fa-envelope"></i> 
+      Email: <a href="mailto:Tle_eng@techlee-eng.com.sg">Tle_eng@techlee-eng.com.sg</a>
+    </p>
+    <p>
+      <i class="fas fa-phone-alt"></i>
+      Phone: <p href="tel:+6594238272">+65 9423 8272</p>
+    </p>
+    <p><i class="fas fa-map-marker-alt"></i> 546, Serangoon Road #01-546A, Singapore 218168.</p>
+  </div>
+
+ 
+</footer>
+        
+    </main>
+
+</body>
+</html>
